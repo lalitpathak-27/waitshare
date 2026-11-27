@@ -1,0 +1,97 @@
+
+/* WaitShare sponsored advertisement */
+
+.waitshare-ad {
+  box-sizing: border-box;
+  width: min(100%, 720px);
+  margin: 14px auto;
+  padding: 13px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  background: linear-gradient(
+    110deg,
+    #f7f4ff,
+    #ffffff
+  );
+
+  border: 1px solid #e4dcff;
+  border-radius: 13px;
+
+  font-family: Arial, sans-serif;
+  color: #25213b;
+
+  box-shadow: 0 3px 12px rgba(50, 30, 100, 0.06);
+
+  animation: waitshareFadeIn 0.35s ease;
+}
+
+.waitshare-ad-logo {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 11px;
+  background: linear-gradient(135deg, #7652d5, #a18aff);
+
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.waitshare-ad-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.waitshare-ad-heading {
+  font-size: 11px;
+  font-weight: 700;
+  color: #7955c9;
+  letter-spacing: 0.4px;
+}
+
+.waitshare-ad-message {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.waitshare-ad-link {
+  width: fit-content;
+  color: #7652d5;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.waitshare-ad-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes waitshareFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .waitshare-ad {
+    margin: 10px auto;
+    padding: 11px;
+  }
+}

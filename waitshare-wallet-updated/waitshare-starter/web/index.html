@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaitShare | Make Waiting Worthwhile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<section id="loginView" class="login-screen">
+
+  <div class="login-card">
+
+    <div class="brand">
+      <span class="logo">w</span>
+      <span>waitshare</span>
+    </div>
+
+    <div class="login-art">
+      <div class="orbit"></div>
+      <div class="orbit second"></div>
+      <div class="core">✳</div>
+    </div>
+
+    <p class="eyebrow">WELCOME TO WAITSHARE</p>
+
+    <h1>Good things happen<br>
+      <span>while you wait.</span>
+    </h1>
+
+    <p class="login-description">
+      Sign in to explore your dashboard and discover sponsor messages.
+    </p>
+
+    <div class="login-buttons">
+
+      <button class="social-btn" data-provider="Google">
+        <span class="google">G</span>
+        Continue with Google
+      </button>
+
+      <button class="social-btn" data-provider="Microsoft">
+        <span class="microsoft">▦</span>
+        Continue with Microsoft
+      </button>
+
+      <button class="social-btn" data-provider="Apple">
+        <span class="apple">●</span>
+        Continue with Apple
+      </button>
+
+      <button class="social-btn" data-provider="Email">
+        <span class="email">✉</span>
+        Continue with Email
+      </button>
+
+    </div>
+
+    <p id="loginNotice" class="login-notice">
+      Social login is a preview feature.
+    </p>
+
+    <button id="demoLogin" class="demo-btn">
+      Explore with demo account →
+    </button>
+
+    <p class="terms">
+      By continuing, you agree to our
+      <a href="#">Terms</a> and
+      <a href="#">Privacy Policy</a>.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- DASHBOARD -->
+<div id="dashboardView" class="app hidden">
+
+  <aside class="sidebar">
+
+    <div class="brand">
+      <span class="logo">w</span>
+      <span>waitshare</span>
+    </div>
+
+    <p class="side-heading">WORKSPACE</p>
+
+    <a href="#overview" class="nav active">⌂ Overview</a>
+    <a href="#ads" class="nav">▧ Ads Shown</a>
+    <a href="#activity" class="nav">↗ Activity</a>
+
+    <div class="sidebar-bottom">
+      <div class="tip">
+        <h4>Make every pause count ✦</h4>
+        <p>Discover sponsor messages while AI prepares your answer.</p>
+      </div>
+
+      <button id="signOut" class="signout">
+        ↪ Sign Out
+      </button>
+    </div>
+
+  </aside>
+
+
+  <main class="main" id="overview">
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">YOUR PERSONAL SPACE</p>
+        <h2>Welcome to WaitShare</h2>
+      </div>
+
+      <div class="profile">
+        <span class="preview">● PREVIEW</span>
+        <span class="avatar">D</span>
+      </div>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-text">
+        <p class="eyebrow light">YOUR WAITSHARE OVERVIEW</p>
+
+        <h1>Make waiting<br>feel worthwhile.</h1>
+
+        <p>
+          Discover sponsor messages and keep track of your activity
+          while your AI assistant prepares a response.
+        </p>
+
+        <a href="#ads" class="hero-button">
+          Explore Ads Shown →
+        </a>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-orbit"></div>
+        <div class="hero-orbit second"></div>
+        <div class="hero-symbol">✳</div>
+      </div>
+
+    </section>
+
+
+    <!-- SUMMARY -->
+    <section class="stats">
+
+      <div class="stat-card wallet">
+        <p>Reward Wallet</p>
+        <h2 id="balance">$12.50</h2>
+        <small id="inrEstimate">Approx. ₹1,062.50 · Demo estimate only</small>
+      </div>
+
+      <div class="stat-card">
+        <p>Withdrawal minimum</p>
+        <h2>$10.00</h2>
+        <small>Demo eligibility threshold</small>
+      </div>
+
+      <div class="stat-card">
+        <p>Ads Displayed</p>
+        <h2>3</h2>
+        <small>Sample placements</small>
+      </div>
+
+      <div class="stat-card">
+        <p>Waiting Room Time</p>
+        <h2>02m 40s</h2>
+        <small>Illustrative demo activity</small>
+      </div>
+
+    </section>
+
+
+    <!-- ADS HISTORY -->
+    <section id="ads" class="ads-section">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR SPONSORED FEED</p>
+          <h2>Ads Already Shown</h2>
+          <p class="subtitle">
+            Explore sponsor placements displayed in your waiting room.
+          </p>
+        </div>
+
+        <span class="count">3 Placements</span>
+      </div>
+
+
+      <div class="ads-grid">
+
+        <article class="ad-card">
+          <div class="ad-image purple-bg">
+            <span>✳</span>
+            <b>FOCUS<br>BETTER</b>
+          </div>
+
+          <div class="ad-content">
+            <div class="ad-meta">
+              <span>SPONSORED</span>
+              <small>Today · 10:42 AM</small>
+            </div>
+
+            <h3>Make space for your best ideas.</h3>
+
+            <p>
+              A sample productivity sponsor placement.
+            </p>
+
+            <div class="ad-footer">
+              <span>● Displayed</span>
+              <small>DEMO AD</small>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="ad-card">
+          <div class="ad-image mint-bg">
+            <span>⌁</span>
+            <b>LEARN<br>MORE</b>
+          </div>
+
+          <div class="ad-content">
+            <div class="ad-meta">
+              <span>SPONSORED</span>
+              <small>Today · 10:18 AM</small>
+            </div>
+
+            <h3>Turn curiosity into a new skill.</h3>
+
+            <p>
+              Example learning platform message.
+            </p>
+
+            <div class="ad-footer">
+              <span>● Displayed</span>
+              <small>DEMO AD</small>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="ad-card">
+          <div class="ad-image peach-bg">
+            <span>✧</span>
+            <b>CREATE<br>MORE</b>
+          </div>
+
+          <div class="ad-content">
+            <div class="ad-meta">
+              <span>SPONSORED</span>
+              <small>Yesterday · 6:35 PM</small>
+            </div>
+
+            <h3>Bring your creative ideas to life.</h3>
+
+            <p>
+              Example creative-tools message.
+            </p>
+
+            <div class="ad-footer">
+              <span>● Displayed</span>
+              <small>DEMO AD</small>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ACTIVITY -->
+    <section id="activity" class="bottom-grid">
+
+      <div class="panel">
+        <p class="eyebrow">RECENT ACTIVITY</p>
+        <h2>Account Activity</h2>
+
+        <div id="events">
+          <p>Loading activity...</p>
+        </div>
+
+        <button id="simulate" class="primary-btn">
+          + Add Demo Activity
+        </button>
+
+        <p id="notice" class="notice">
+          Adds fictional test credits only.
+        </p>
+      </div>
+
+
+      <div class="panel payment-panel" id="withdrawPanel">
+        <div class="payment-icon">₹</div>
+        <p class="eyebrow">WITHDRAWAL PREVIEW</p>
+        <h2>Request a demo withdrawal</h2>
+        <p class="withdraw-copy">The preview uses a fixed test rate of ₹85 per $1. No bank details are collected and no real payment is made.</p>
+        <label for="withdrawAmount">Amount in USD</label>
+        <input id="withdrawAmount" type="number" min="10" step="0.01" value="10.00" />
+        <div class="conversion-line"><span>Estimated bank amount</span><strong id="withdrawInr">₹850.00</strong></div>
+        <p id="withdrawEligibility" class="withdraw-hint">Checking wallet eligibility…</p>
+        <button id="withdrawButton" class="primary-btn" type="button">Request demo withdrawal</button>
+        <p id="withdrawNotice" class="notice" role="status">Demo only — no money will be transferred.</p>
+        <div class="withdraw-history">
+          <h3>Withdrawal history</h3>
+          <div id="withdrawals"><p>No withdrawal requests yet.</p></div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      WaitShare Prototype · Fictional demo rewards · No real earnings or payouts.
+    </footer>
+
+  </main>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

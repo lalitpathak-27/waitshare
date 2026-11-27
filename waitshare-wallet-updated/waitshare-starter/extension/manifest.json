@@ -1,0 +1,21 @@
+
+{
+  "manifest_version":3,
+  "name":"waitshare",
+  "version": "1.0.0",
+  "description":"waitshare - sponsored advertisements for AI platforms",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
